@@ -21,6 +21,8 @@ a { text-decoration: none; color: inherit; }
   max-width: 1140px;
   margin: 0 auto;   
   padding: 0 24px;
+  overflow-x: hidden;
+  
 }
 
 .btn {
@@ -32,21 +34,41 @@ a { text-decoration: none; color: inherit; }
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.btn--primary { background: #0282fa; color: #fff; }
-.btn:hover    { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(3, 3, 3, 0.3); }
+.btn--primary { 
+  background: #0282fa; 
+  color: #fff; 
+}
+.btn:hover    { 
+  transform: translateY(-2px); 
+  box-shadow: 0 8px 20px rgba(3, 3, 3, 0.3); 
+}
 
-.section-title { font-size: 2rem; text-align: center; }
-.section-sub   { text-align: center; color: #6B6B6B; max-width: 560px; margin: 12px auto 0; }
+.section-title { 
+  font-size: 2rem; 
+  text-align: center; 
+}
+.section-sub   { 
+  text-align: center; 
+  color: #6B6B6B; 
+  max-width: 560px; 
+  margin: 12px auto 0; }
       
                 /* Navbar */
-.navbar { padding: 20px 0; background: #ffffff; }
+.navbar { 
+  padding: 20px 0; 
+  background: #ffffff; }
 .navbar__inner {
   display: flex;             
   align-items: center;
   justify-content: space-between;
 }
-.logo { font-size: 1.4rem; font-weight: 800; }
-.nav-links { display: flex; gap: 32px; font-weight: 500; }
+.logo { 
+  font-size: 1.4rem; 
+  font-weight: 800; }
+.nav-links { 
+  display: flex; 
+  gap: 32px; 
+  font-weight: 500; }
 
 .hero { 
     background-image: url(../assets/banner.jpg); 
@@ -70,8 +92,14 @@ a { text-decoration: none; color: inherit; }
   gap: 40px;
   flex-wrap: wrap;         
 }
-.hero__text { max-width: 520px; color:white;}
-.hero__text h1 { font-size: 3.2rem; margin-bottom: 16px; display: flex;}
+.hero__text { 
+  max-width: 520px; 
+  color:white;
+}
+.hero__text h1 { 
+  font-size: 3.2rem; 
+  margin-bottom: 16px; display: flex;
+}
 .hero__desc { 
     color: #fffefe; 
     margin-bottom: 32px;
@@ -89,7 +117,7 @@ a { text-decoration: none; color: inherit; }
 .work { padding: 80px 0; }
 .work__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 2 fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin-top: 48px;
 }
@@ -128,7 +156,7 @@ a { text-decoration: none; color: inherit; }
 .work_pricing { padding: 80px 0; }
 .work__grid_pricing {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
   align-items: stretch;
   gap: 20px;
   margin-top: 48px;
