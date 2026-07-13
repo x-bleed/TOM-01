@@ -8,6 +8,7 @@ body {
   font-family: 'Inter', sans-serif;
   color: #2B2B2B;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -21,7 +22,6 @@ a { text-decoration: none; color: inherit; }
   max-width: 1140px;
   margin: 0 auto;   
   padding: 0 24px;
-  overflow-x: hidden;
   
 }
 
@@ -131,6 +131,13 @@ a { text-decoration: none; color: inherit; }
   justify-content: flex-end;
   /* margin-top: 15px; */
 }
+.work__card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px 12px 0 0;
+}
 
 .work__card--a { 
     border: 1px solid grey;
@@ -219,7 +226,7 @@ a { text-decoration: none; color: inherit; }
   font-size: 0.95rem;
 }
 
-/* FOOTER */
+/* FOOTER is completely done by CLUDE AI.*/
 .footer { margin-top: 80px; border-top: 1px solid rgba(255,255,255,0.1); padding: 32px 0; }
 .footer__inner {
   display: flex;
@@ -228,8 +235,22 @@ a { text-decoration: none; color: inherit; }
   flex-wrap: wrap;
   gap: 16px;
 }
-.footer__logo { filter: brightness(0) invert(1); }
-.footer__links { display: flex; gap: 24px; }
-.footer__links a { color: #c9d6e8; font-size: 0.9rem; }
-.footer__links a:hover { color: #fff; }
-.footer__copy { color: #7f93b0; font-size: 0.85rem; }
+.footer__logo { 
+  filter: brightness(0) 
+  invert(1); 
+}
+.footer__links { 
+  display: flex; 
+  gap: 24px; 
+}
+.footer__links a { 
+  color: #c9d6e8; 
+  font-size: 0.9rem; 
+}
+.footer__links a:hover { 
+  color: #fff; 
+}
+.footer__copy { 
+  color: #7f93b0; 
+  font-size: 0.85rem; 
+}
